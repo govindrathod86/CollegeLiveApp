@@ -13,7 +13,7 @@ angular.module('WordApp.config', [])
 .constant('IONIC_APP_COLOR', 'assertive')
 
 // Change Posts page template to cards, cards2, list, mixed
-.constant('POSTS_TEMPLATE', 'mixed')
+.constant('POSTS_TEMPLATE', 'list')
 
 // Replace with your Android package name and IOS app ID
 .constant('ANDROID_PACKAGE_NAME', 'me.classinfo.collegelive')
