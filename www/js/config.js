@@ -10,7 +10,7 @@ angular.module('WordApp.config', [])
 .constant('ONESIGNAL_APP_ID', '6816e351-487d-4507-ac4c-a512479f1bdf')
 
 // Change color your Ionic application to light, stable, positive, calm, balanced, energized, assertive, royal or dark 
-.constant('IONIC_APP_COLOR', 'assertive')
+.constant('IONIC_APP_COLOR', 'energized')
 
 // Change Posts page template to cards, cards2, list, mixed
 .constant('POSTS_TEMPLATE', 'list')
