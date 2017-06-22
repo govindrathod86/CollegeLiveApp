@@ -10,16 +10,16 @@ angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', '
         var admobid = {};
         if (/(android)/i.test(navigator.userAgent)) {
             admobid = { // for Android
-                banner: 'ca-app-pub-7606760144414883/9902261055',
-                interstitial: 'ca-app-pub-7606760144414883/9875978656'
+                banner: 'ca-app-pub-1089631784540973/6170757046',
+                interstitial: 'ca-app-pub-1089631784540973/3077689844'
             };
         } else if (/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
             admobid = { // for iOS
-                banner: 'ca-app-pub-7606760144414883/9902261055'
+                banner: ''
             };
         } else {
             admobid = { // for Windows Phone
-                banner: 'ca-app-pub-7606760144414883/9902261055'
+                banner: ''
             };
         }
 
