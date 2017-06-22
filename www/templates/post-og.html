@@ -20,7 +20,7 @@
   	<div ng-if="post" class="card post">
 	  <div class="item post-title">
 		<h2 ng-bind-html="post.title.rendered"></h2>
-		<h6>{{lng_posted}} <span am-time-ago="post.date"></span> {{lng_in}} {{post.pure_taxonomies.categories[0].name}}</h6>
+		<h6>{{lng_posted}} <span am-time-ago="post.date"></span> {{lng_in}} {{post.pure_taxonomies.categories[0].name}} {{comments.length}} {{lng_comments_count}}</h6>
 	  </div>
 	  
 	  <div class="item item-image">
@@ -36,9 +36,9 @@
 		<h4 class="no-data">{{lng_no_data}}</h4>
 	  </div>
 	</div>
-	<!-- <div class="padding-bottom"> -->
-	<!-- <div class="item comment" ng-if="comments.length < 1">{{lng_no_comments}}</div> -->
-	<!-- <div class="item comment" ng-repeat="comment in comments"><h5 class="{{color}}">{{comment.author_name}} <span am-time-ago="comment.date"></span></h5><div ng-bind-html="comment.content.rendered"></div></div> -->
-	<!-- </div>	 -->
+	<div class="padding-bottom">
+	<div class="item comment" ng-if="comments.length < 1">{{lng_no_comments}}</div>
+	<div class="item comment" ng-repeat="comment in comments"><h5 class="{{color}}">{{comment.author_name}} <span am-time-ago="comment.date"></span></h5><div ng-bind-html="comment.content.rendered"></div></div>
+	</div>	
   </ion-content>
 </ion-view>
