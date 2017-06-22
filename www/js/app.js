@@ -40,7 +40,7 @@ angular.module('WordApp', ['ionic', 'WordApp.controllers', 'WordApp.services', '
         var notificationOpenedCallback = function(jsonData) {
             if (jsonData.additionalData) {
                 if (jsonData.additionalData.postid)
-                alert("Notification received:\n" + jsonData.additionalData.postid);
+                //alert("Notification received:\n" + jsonData.additionalData.postid);
                     $state.go('app.post', {
                     'postId': +jsonData.additionalData.postid
                 });
